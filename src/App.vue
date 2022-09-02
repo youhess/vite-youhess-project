@@ -6,7 +6,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <el-button type="primary" @click="$router.push('/home')">Primary</el-button>
     <!-- ↓总路由视图 -->
     <router-view></router-view>
     <!-- <a href="https://vitejs.dev" target="_blank">

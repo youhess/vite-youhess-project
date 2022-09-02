@@ -5,13 +5,19 @@ const routes: RouteRecordRaw[] = [
     path: "/",
     redirect: "/Home"
   },
-  //参数设置
   {
     path: "/Home",
     //主页
     name: "首页",
     component: () =>
-      import("../views/Home/index.vue")
+      import("@/views/Home/index.vue")
+  },
+  {
+    path: "/Resume",
+    //简历
+    name: "简历",
+    component: () =>
+      import("@/views/Resume/index.vue")
   }
 ];
 

@@ -1,6 +1,8 @@
-<template lang="">
-    <div>
-        这是首页
+<template>
+    <div> 
+        <h1>这是首页</h1> 
+        <el-button type="primary" @click="$router.push('/resume')">去简历</el-button>
+      
     </div>
 </template>
 <script>
