@@ -1,6 +1,7 @@
 <template >
-    <div class="red">
-        hello
+    <div class="w-100px">
+        <div>hello</div>
+        <div>hello</div>
     </div>
 </template>
 <script>
