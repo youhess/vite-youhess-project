@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -21,5 +22,12 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src'),
     },
-  }
+  },
+  css:{
+    preprocessorOptions:{
+      scss: {
+        additionalData: `@import "./src/styles/index";`
+      }
+    }
+ }
 })
